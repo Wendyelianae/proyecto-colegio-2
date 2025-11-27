@@ -98,11 +98,6 @@ header h1 {
     text-shadow: 0 0 35px rgba(255,255,255,0.35);
 }
 
-@keyframes tituloGlow {
-    0% { background-position: 0%; }
-    100% { background-position: 200%; }
-}
-
 /* =========================================================
    MENÚ MODERNO – BOTONES BRILLANTES
    ========================================================= */
@@ -205,7 +200,6 @@ nav a:hover {
     box-shadow: 0 15px 40px var(--shadow), 0 0 20px var(--amarillo-brillante);
 }
 
-/* IMÁGENES DE TARJETAS */
 .nivel img {
     width: 100%;
     height: 180px;
@@ -218,7 +212,6 @@ nav a:hover {
     transform: scale(1.12);
 }
 
-/* TEXTO DE TARJETAS */
 .nivel h3 {
     font-size: 1.8rem;
     font-family: 'Bebas Neue';
@@ -289,4 +282,38 @@ footer {
     font-size: 1.2rem;
     font-weight: bold;
     border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+/* =========================================================
+   TITULOS Y BOTONES RESPONSIVOS
+   ========================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header h1 { font-size: 3.8rem; }
+    .hero h2 { font-size: 2.8rem; }
+    section h2 { font-size: 2.4rem; }
+    .nivel h3 { font-size: 1.6rem; }
+    nav a { font-size: 1.1rem; padding: 8px 20px; }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.8rem; letter-spacing: 3px; }
+    .hero h2 { font-size: 2.2rem; }
+    section h2 { font-size: 2rem; }
+    .nivel h3 { font-size: 1.4rem; }
+    nav a { font-size: 1rem; padding: 6px 15px; }
+    .niveles-grid { gap: 20px; padding: 30px 15px; justify-content: center; }
+    .galeria { gap: 15px; padding: 15px; }
+    .galeria img { width: 90%; height: auto; }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+    header h1 { font-size: 2rem; letter-spacing: 2px; }
+    .hero h2 { font-size: 1.8rem; }
+    section h2 { font-size: 1.6rem; }
+    .nivel h3 { font-size: 1.2rem; }
+    nav a { font-size: 0.9rem; padding: 5px 10px; }
 }
